@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réservation - AMWAJ</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>AMWAJ</h1>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="chambres.html">Chambres</a></li>
+                    <li><a href="restaurant.html">Restaurant</a></li>
+                    <li><a href="reservation.html" class="active btn-reservation">Réservation</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <div class="banner-content">
+            <h1>Réservation</h1>
+            <p>Planifiez votre séjour de rêve</p>
+        </div>
+    </section>
+
+    <!-- Réservation Section -->
+    <section class="reservation-page">
+        <div class="container">
+            <div class="section-header">
+                <span class="subtitle">Réservez</span>
+                <h2>Votre Séjour</h2>
+            </div>
+            <div class="reservation-container">
+                <div class="reservation-info">
+                    <h3>Réservez votre chambre</h3>
+                    <p>Remplissez le formulaire ci-contre pour effectuer une demande de réservation. Notre équipe vous contactera dans les plus brefs délais pour confirmer votre séjour.</p>
+                    <div class="reservation-benefits">
+                        <div class="benefit-item">
+                            <i class="fas fa-check-circle"></i>
+                            <p>Meilleur tarif garanti</p>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check-circle"></i>
+                            <p>Annulation gratuite jusqu'à 48h avant l'arrivée</p>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check-circle"></i>
+                            <p>Petit-déjeuner offert pour les réservations en ligne</p>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check-circle"></i>
+                            <p>Wi-Fi gratuit dans tout l'établissement</p>
+                        </div>
+                    </div>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>123 Avenue des Champs-Élysées, 75008 Paris, France</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <p>+33 1 23 45 67 89</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <p>reservations@amwaj.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="reservation-form">
+                    <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DgK000001QDPG" method="POST" onsubmit="return validerFormulaire()">
+                        <input type=hidden name="oid" value="00DgK000001QDPG">
+                        <input type=hidden name="retURL" value="http://orgfarm-b5c62bbb83-dev-ed.develop.my.salesforce.com/apex/MaPageTest
+">
+                        <input type="hidden" name="lead_source" value="Web">
+                        
+                        <!--<input type="hidden" name="debug" value=1>
+                        <input type="hidden" name="debugEmail" value="najat.zaidane1@gmail.com">-->
+                
+                        <label for="salutation">Salutation</label>
+                        <select id="salutation" name="salutation">
+                            <option value="">--Aucun--</option>
+                            <option value="Mr.">Mr.</option>
+                            <option value="Ms.">Ms.</option>
+                            <option value="Mrs.">Mrs.</option>
+                            <option value="Dr.">Dr.</option>
+                            <option value="Prof.">Prof.</option>
+                            <option value="Mx.">Mx.</option>
+                        </select>
+                
+                        <label for="first_name">Prénom</label>
+                        <input id="first_name" maxlength="40" name="first_name" type="text" placeholder="Votre prénom" required />
+                
+                        <label for="last_name">Nom</label>
+                        <input id="last_name" maxlength="80" name="last_name" type="text" placeholder="Votre nom de famille" required />  
+                
+                        <label for="email">Email</label>
+                        <input id="email" maxlength="80" name="email" type="email" placeholder="exemple@exemple.com" required />
+                
+                        <label for="phone">Téléphone</label>
+                        <input id="phone" maxlength="40" name="phone" size="20" type="text" placeholder="Votre numéro de téléphone" required />
+                
+                    
+                        <div class="row">
+                            <div>
+                                <label for="arrival_date">Date d'arrivée souhaitée</label>
+                                <input id="00NgK00000jK8tx" name="00NgK00000jK8tx" size="12" type="text" placeholder="jj/mm/aaaa" required />
+                            </div>
+                            <div>
+                                <label for="departure_date">Date de départ souhaitée</label>
+                                <input id="00NgK00000jK8yn" name="00NgK00000jK8yn" size="12" type="text" placeholder="jj/mm/aaaa" required />
+                            </div>
+                        </div>
+                
+                        <div class="row">
+                            <div>
+                                <label for="room_type">Type de Chambre</label>
+                                <select id="00NgK00000jK9wT" name="00NgK00000jK9wT" title="Type Chambre Souhaite" required>
+                                    <option value="">--Choisir--</option>
+                                    <option value="Chambre Single - Lit simple">Chambre Single - Lit simple</option>
+                                    <option value="Chambre Double - Lit double">Chambre Double - Lit double</option>
+                                    <option value="Chambre Twin - 2 lits séparés">Chambre Twin - 2 lits séparés</option>
+                                    <option value="Chambre triple - 3 lits séparés">Chambre triple - 3 lits séparés</option>
+                                    <option value="Chambre Single Vue Mer">Chambre Single Vue Mer</option>
+                                    <option value="Chambre Double Vue Mer">Chambre Double Vue Mer</option>
+                                    <option value="Chambre Triple Vue Mer">Chambre Triple Vue Mer</option>
+                                    <option value="Suite Junior">Suite Junior</option>
+                                    <option value="Bungalow - 4 chambres">Bungalow - 4 chambres</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="num_people">Nombre de personnes</label>
+                                <input id="00NgK00000jKuiT" name="00NgK00000jKuiT" type="text" min="1" placeholder="Nombre de personnes"/>
+                            </div>
+                        </div>
+                
+                        <label for="nombre_chambre_souhaite">Nombre Chambre Souhaite:</label>
+                        <input id="00NgK00000qSb5A" name="00NgK00000qSb5A" size="20" type="text" placeholder="Nombre souhaité de chambres"/><br>
+                
+                        <div class="row">
+                            <div>
+                                <label for="reservation_type">Type de réservation</label>
+                                <select id="00NgK00000jKugs" name="00NgK00000jKugs" title="Type Reservation">
+                                    <option value="">--Choisir--</option>
+                                    <option value="Personnelle">Personnelle</option>
+                                    <option value="Professionnelle">Professionnelle</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="company">Société</label>
+                                <input id="company" maxlength="40" size="20" name="company" type="text" placeholder="Nom de votre société-optionel"/>
+                            </div>
+                        </div>
+                        <p id="erreur-message" style="display:none;"></p>
+                        <button type="submit" class="submit-btn">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <div class="section-header">
+                <span class="subtitle">Questions</span>
+                <h2>Foire Aux Questions</h2>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Quelles sont les heures d'arrivée et de départ?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>L'heure d'arrivée est à partir de 12h00 et l'heure de départ est jusqu'à 12h30. Un départ tardif peut être arrangé selon disponibilité (des frais supplémentaires peuvent s'appliquer).</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Le petit-déjeuner est-il inclus?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Le petit-déjeuner est inclus dans certaines de nos offres. Veuillez vérifier les détails de votre réservation.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Proposez-vous un service de navette depuis l'aéroport?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Oui, nous proposons un service de navette depuis et vers l'aéroport. Veuillez nous contacter au moins 48 heures avant votre arrivée pour organiser ce service.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Les animaux sont-ils acceptés?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Les petits animaux de compagnie sont acceptés dans certaines chambres moyennant un supplément. Veuillez nous informer à l'avance si vous souhaitez venir avec votre animal.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>AMWAJ</h2>
+                    <p>Luxe, calme et volupté</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Liens Rapides</h3>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="chambres.html">Chambres</a></li>
+                        <li><a href="restaurant.html">Restaurant</a></li>
+                        <li><a href="reservation.html">Réservation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Nations Unies, Route de casablanca, El Jadida 24000, Maroc</p>
+                    <p><i class="fas fa-phone"></i> +212 5 23 45 67 89</p>
+                    <p><i class="fas fa-envelope"></i> info@amwaj.com</p>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Inscrivez-vous pour recevoir nos offres spéciales</p>
+                    <form>
+                        <input type="email" placeholder="Votre email">
+                        <button type="submit">S'inscrire</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 AMWAJ. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

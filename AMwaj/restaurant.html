@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant - AMWAJ</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>AMWAJ</h1>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="chambres.html">Chambres</a></li>
+                    <li><a href="restaurant.html" class="active">Restaurant</a></li>
+                    <li><a href="reservation.html" class="btn-reservation">Réservation</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner restaurant-banner">
+        <div class="banner-content">
+            <h1>AMWAJ</h1>
+            <p>Une expérience gastronomique d'exception</p>
+        </div>
+    </section>
+
+    <!-- Restaurant Introduction -->
+    <section class="restaurant-intro">
+        <div class="container">
+            <div class="section-header">
+                <span class="subtitle">Gastronomie</span>
+                <h2>Notre Restaurant</h2>
+            </div>
+            <div class="restaurant-content">
+                <div class="restaurant-text">
+                    <p>Bienvenue à Amwaj , le restaurant gastronomique de l'AMWAJ. Sous la direction du Chef étoilé Jean-Pierre Moreau, notre restaurant vous propose une cuisine française raffinée, revisitée avec une touche de modernité.</p>
+                    <p>Nous mettons un point d'honneur à sélectionner les meilleurs produits locaux et de saison pour vous offrir une expérience culinaire inoubliable.</p>
+                    <div class="restaurant-hours">
+                        <h3>Horaires d'ouverture</h3>
+                        <ul>
+                            <li><span>Petit-déjeuner:</span> 7h00 - 10h30</li>
+                            <li><span>Déjeuner:</span> 12h00 - 14h30</li>
+                            <li><span>Dîner:</span> 19h00 - 22h30</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="btn">Réserver une table</a>
+                </div>
+                <div class="restaurant-img">
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Restaurant amwaj">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chef Section -->
+    <section class="chef">
+        <div class="container">
+            <div class="chef-content">
+                <div class="chef-img">
+                    <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=677&q=80" alt="Chef Jean-Pierre Moreau">
+                </div>
+                <div class="chef-text">
+                    <h3>Chef Jean-Pierre Moreau</h3>
+                    <p class="chef-title">Chef Exécutif</p>
+                    <p>Avec plus de 20 ans d'expérience dans les plus grands restaurants du monde, le Chef Jean-Pierre Moreau apporte son expertise et sa passion à la cuisine du Grand Élysée.</p>
+                    <p>Formé auprès des plus grands noms de la gastronomie française, il a obtenu sa première étoile Michelin à l'âge de 32 ans et n'a cessé de repousser les limites de la cuisine française depuis.</p>
+                    <p>"Ma philosophie est simple : respecter le produit, sublimer ses saveurs naturelles et créer une expérience mémorable pour chaque convive."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu">
+        <div class="container">
+            <div class="section-header">
+                <span class="subtitle">Saveurs</span>
+                <h2>Notre Menu</h2>
+            </div>
+            <div class="menu-tabs">
+                <div class="tab-header">
+                    <button class="tab-btn active" data-tab="entrees">Entrées</button>
+                    <button class="tab-btn" data-tab="plats">Plats</button>
+                    <button class="tab-btn" data-tab="desserts">Desserts</button>
+                    <button class="tab-btn" data-tab="vins">Vins</button>
+                </div>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="entrees">
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <div class="menu-item-header">
+                                    <h3>Foie Gras de Canard Maison</h3>
+                                    <span class="price">28€</span>
+                                </div>
+                                <p>Mi-cuit, chutney de figues et pain brioché toasté</p>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-header">
+                                    <h3>Carpaccio de Saint-Jacques</h3>
+                                    <span class="price">32€</span>
+                                </div>
+                                <p>Huile de truffe, zestes de citron et fleur de sel</p>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-header">
+                                    <h3>Velouté de Potimarron</h3>
+                                    <span class="price">24€</span>
+                                </div>
+                                <p>Éclats de châtaignes et crème légère à la noisette</p>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-header">
+                                    <h3>Salade de Homard Breton</h3>
+                                    <span class="price">36€</span>
+                                </div>
+                                <p>Avocat, mangue et vinaigrette aux agrumes</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="plats">
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <div class="menu-item-header">
+                                    <h3>Filet de Bœuf Rossini</h3>
+                                    <span class="price">48€</span>
+                                </div>
+                                <p>Foie gras poêlé, sauce périgourdine et pommes Anna</p>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-header">
+                                    <h3>Bar de Ligne Rôti</h3>
+                                    <span class="price">42€</span>
+                                </div>
+                                <p>Risotto aux asperges et émulsion au champagne</p>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-header">
+                                    <h3>Suprême de Volaille Fermière</h3>
+                                    <span class="price">38€</span>
+                                </div>
+                                <p>Farci aux morilles, purée de céleri et jus corsé</p>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-header">
+                                    <h3>Carré d'Agneau en Croûte d'Herbes</h3>
+                                    <span class="price">46€</span>
+                                </div>
+                                <p>Légumes de saison glacés et jus à l'ail noir</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="desserts">
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <div class="menu-item-header">
+                                    <h3>Soufflé au Grand Marnier</h3>
+                                    <span class="price">18€</span>
+                                </div>
+                                <p>Glace vanille et zestes d'orange confits</p>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-header">
+                                    <h3>Tarte au Chocolat Guanaja</h3>
+                                    <span class="price">16€</span>
+                                </div>
+                                <p>Crème anglaise à la fève de tonka</p>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-header">
+                                    <h3>Assiette de Fromages Affinés</h3>
+                                    <span class="price">22€</span>
+                                </div>
+                                <p>Sélection de notre maître fromager et pain aux noix</p>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-header">
+                                    <h3>Pavlova aux Fruits Rouges</h3>
+                                    <span class="price">17€</span>
+                                </div>
+                                <p>Meringue craquante, crème légère et coulis de fruits rouges</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="vins">
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <div class="menu-item-header">
+                                    <h3>Champagne Brut Réserve</h3>
+                                    <span class="price">95€</span>
+                                </div>
+                                <p>Maison Laurent-Perrier</p>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-header">
+                                    <h3>Chablis Premier Cru</h3>
+                                    <span class="price">78€</span>
+                                </div>
+                                <p>Domaine William Fèvre, 2018</p>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-header">
+                                    <h3>Château Margaux</h3>
+                                    <span class="price">320€</span>
+                                </div>
+                                <p>Premier Grand Cru Classé, 2015</p>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-header">
+                                    <h3>Côte-Rôtie</h3>
+                                    <span class="price">110€</span>
+                                </div>
+                                <p>Domaine Jamet, 2017</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="restaurant-gallery">
+        <div class="container">
+            <div class="section-header">
+                <span class="subtitle">Ambiance</span>
+                <h2>Notre Galerie</h2>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Restaurant">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Ambiance">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Plat">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="Salade">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1560717845-968823efbee1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Dessert">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1554679665-f5537f187268?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="Vin">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation CTA -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Réservez votre table</h2>
+                <p>Pour une expérience gastronomique inoubliable</p>
+                <a href="#" class="btn">Réserver maintenant</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>AMWAJ</h2>
+                    <p>Luxe, calme et volupté</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Liens Rapides</h3>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="chambres.html">Chambres</a></li>
+                        <li><a href="restaurant.html">Restaurant</a></li>
+                        <li><a href="reservation.html">Réservation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Avenue des Champs-Élysées, 75008 Paris, France</p>
+                    <p><i class="fas fa-phone"></i> +33 1 23 45 67 89</p>
+                    <p><i class="fas fa-envelope"></i> info@amwaj.com</p>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Inscrivez-vous pour recevoir nos offres spéciales</p>
+                    <form>
+                        <input type="email" placeholder="Votre email">
+                        <button type="submit">S'inscrire</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 AMWAJ. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
