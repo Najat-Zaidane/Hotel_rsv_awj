@@ -209,6 +209,26 @@ document.addEventListener("DOMContentLoaded", () => {
       "Bungalow - 3 chambres": 6,
     }
 
+    // Vérification que la date d'arrivée est aujourd'hui ou dans le futur
+    const today = new Date()
+    today.setHours(0, 0, 0, 0) // Remise à zéro de l'heure pour comparaison
+    if (dateArrivee < today) {
+      messageErreur.textContent = "⚠️ La date d'arrivée souhaitée doit être aujourd'hui ou dans le futur."
+      messageErreur.style.display = "block"
+      return false
+    }
+    // Vérification que le nombre de personnes est un entier positif
+    if (nbPersonnes < 1 || !Number.isInteger(nbPersonnes)) {
+      messageErreur.textContent = "⚠️ Veuillez entrer un nombre de personnes valide."
+      messageErreur.style.display = "block"
+      return false
+    }
+    // Vérification que le type de chambre est sélectionné
+    if (!typeChambre) {
+      messageErreur.textContent = "⚠️ Veuillez sélectionner un type de chambre."
+      messageErreur.style.display = "block"
+      return false
+    }
     // Vérification que les dates sont valides
     if (!dateArrivee || !dateDepart) {
       messageErreur.textContent = "⚠️ Veuillez entrer des dates valides au format jj/mm/aaaa."
